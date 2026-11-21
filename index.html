@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nishant Doifode — Frontend Developer & UI Designer. Building modern, animated web experiences with HTML, CSS, JavaScript, GSAP, and Tailwind.">
+    <meta property="og:title" content="Nishant Doifode — Frontend Developer & UI Designer">
+    <meta property="og:description" content="Building modern, animated web experiences with HTML, CSS, JavaScript, GSAP, and Tailwind.">
+    <meta property="og:image" content="media/portfoilio.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nishant Doifode — Frontend Developer & UI Designer">
+    <meta name="twitter:description" content="Building modern, animated web experiences with HTML, CSS, JavaScript, GSAP, and Tailwind.">
+    <meta name="twitter:image" content="media/portfoilio.jpg">
+    <title>Nishant Doifode — Frontend Developer & UI Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+    <link rel="manifest" href="media/site.webmanifest">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts with display=swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Preload hero video poster -->
+    <link rel="preload" as="image" href="media/hero-poster.jpg">
+</head>
+<body>
+
+
+    <!-- Skip Link (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-links">
+            <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="#projects"><i class="fas fa-code"></i><span>Work</span></a>
+            <a href="#skills"><i class="fas fa-layer-group"></i><span>Skills</span></a>
+            <a href="#about"><i class="fas fa-user"></i><span>About</span></a>
+            <a href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Home Section with Video Background -->
+        <section id="home" class="section home-section reveal">
+            <video autoplay muted loop playsinline preload="metadata" poster="media/hero-poster.jpg" class="bg-video">
+                <source src="media/ufo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+
+            <div class="home-content">
+                <h1 class="reveal">Nishant Doifode</h1>
+                <h2 class="typing-text"></h2>
+                <p class="reveal">I build modern websites with a strong focus on design and performance — interfaces that move, respond, and feel good to use.</p>
+
+                <div class="home-actions reveal">
+                    <a href="#projects" class="btn-resume">View my work</a>
+                    <a href="#contact" class="btn-resume secondary-btn">Request resume</a>
+                </div>
+
+                <div class="tech-stack reveal">
+                    <span>Based in India</span> • <span>UI / UX</span> • <span>Figma designs</span> • <span>Animated GSAP & CSS</span>
+                </div>
+            </div>
+
+            <a href="#projects" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- Coding Projects Section -->
+        <section id="projects" class="section">
+            <div class="container reveal">
+                <h2 class="section-title">01 Coding Projects</h2>
+                <p class="section-subtitle">Production web applications — live demos and source code.</p>
+
+                <div class="cards">
+                    <div class="card coding-card" data-img="media/vastraimg.jpg" data-title="Vastra — Women's Clothing E-commerce" data-desc="Full-stack e-commerce platform with product catalog, cart, checkout, and admin dashboard. Built with modern React patterns and deployed on Vercel." data-demo="https://vastra-five-alpha.vercel.app/" data-github="https://github.com/nishantdoifode/Vastra" data-tags="React, Tailwind, Vercel">
+                        <img src="media/vastraimg.jpg" alt="Vastra E-commerce" loading="lazy">
+                        <div class="overlay">
+                            <h3>Vastra — Women's Clothing E-commerce</h3>
+                            <p>React • Tailwind • Vercel</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-actions">
+                                <a href="https://vastra-five-alpha.vercel.app/" target="_blank" rel="noopener" class="btn-card btn-live" aria-label="View Vastra live demo">
+                                    <i class="fas fa-external-link-alt"></i> View Project
+                                </a>
+                                <a href="https://github.com/nishantdoifode/Vastra" target="_blank" rel="noopener" class="btn-card btn-github" aria-label="View Vastra on GitHub">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card coding-card" data-img="media/myaddharimg.jpg" data-title="MyAadhaar Clone" data-desc="Pixel-perfect clone of the official UIDAI MyAadhaar portal. Implements responsive layouts, form validation, and accessibility features matching the government standard." data-demo="https://myaadhaarr.netlify.app/Home" data-github="https://github.com/nishantdoifode/aadhar-main" data-tags="HTML, CSS, JS, Netlify">
+                        <img src="media/myaddharimg.jpg" alt="MyAadhaar Clone" loading="lazy">
+                        <div class="overlay">
+                            <h3>MyAadhaar Clone</h3>
+                            <p>HTML • CSS • JavaScript</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-actions">
+                                <a href="https://myaadhaarr.netlify.app/Home" target="_blank" rel="noopener" class="btn-card btn-live" aria-label="View MyAadhaar live demo">
+                                    <i class="fas fa-external-link-alt"></i> View Project
+                                </a>
+                                <a href="https://github.com/nishantdoifode/aadhar-main" target="_blank" rel="noopener" class="btn-card btn-github" aria-label="View MyAadhaar on GitHub">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card coding-card" data-img="media/portfolioimg.jpg" data-title="Portfolio Website (v2)" data-desc="This portfolio — animated, accessible, and performance-optimized. Features GSAP scroll animations, dark/light theme, reduced-motion support, and a Netlify-powered contact form." data-demo="https://nishantportfoliomark2.netlify.app/" data-github="https://github.com/nishantdoifode/portfolio" data-tags="HTML, CSS, GSAP, Netlify">
+                        <img src="media/portfolioimg.jpg" alt="Portfolio Website v2" loading="lazy">
+                        <div class="overlay">
+                            <h3>Portfolio Website (v2)</h3>
+                            <p>HTML • CSS • GSAP</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-actions">
+                                <a href="https://nishantportfoliomark2.netlify.app/" target="_blank" rel="noopener" class="btn-card btn-live" aria-label="View Portfolio live demo">
+                                    <i class="fas fa-external-link-alt"></i> View Project
+                                </a>
+                                <a href="https://github.com/nishantdoifode/portfolio" target="_blank" rel="noopener" class="btn-card btn-github" aria-label="View Portfolio on GitHub">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UI Designs Section -->
+        <section id="ui-designs" class="section">
+            <div class="container reveal">
+                <h2 class="section-title">02 UI Designs</h2>
+                <p class="section-subtitle">Figma design systems and UI concepts — click to view full size.</p>
+
+                <div class="cards ui-cards">
+                    <div class="card ui-card" data-img="media/ui2.jpg" data-title="Taste of Music" data-desc="A music streaming UI concept with a cohesive design system: color tokens, component library, player states, and responsive breakpoints.">
+                        <img src="media/ui2.jpg" alt="Taste of Music UI Design" loading="lazy">
+                        <div class="overlay">
+                            <h3>Taste of Music</h3>
+                            <p>Figma • Design System • UI Kit</p>
+                            <div class="card-links">
+                                <span class="figma-badge">View Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ui-card" data-img="media/ui1.jpg" data-title="Cool Minimal" data-desc="Minimalist design system establishing spacing scale, typography, component variants, and dark/light themes — built for developer handoff.">
+                        <img src="media/ui1.jpg" alt="Cool Minimal Design System" loading="lazy">
+                        <div class="overlay">
+                            <h3>Cool Minimal</h3>
+                            <p>Figma • Minimalism • Tokens</p>
+                            <div class="card-links">
+                                <span class="figma-badge">View Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Highlights -->
+        <section class="section" style="padding: 4rem 2rem; min-height: auto;">
+            <div class="container reveal" style="max-width: 800px;">
+                <h2 class="section-title" style="text-align: center;">Performance Highlights</h2>
+                <p class="section-subtitle" style="text-align: center; max-width: 100%; margin-bottom: 3rem;">Real metrics from this portfolio — measured, not claimed.</p>
+
+                <div class="cs-stats" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <div class="cs-stat" style="text-align: center;">
+                        <span class="cs-number" style="font-size: 2.5rem; font-weight: 700; color: var(--accent); line-height: 1.1; display: block;">< 3s</span>
+                        <span class="cs-label" style="font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;">LCP (Mobile)</span>
+                    </div>
+                    <div class="cs-stat" style="text-align: center;">
+                        <span class="cs-number" style="font-size: 2.5rem; font-weight: 700; color: var(--accent); line-height: 1.1; display: block;">100</span>
+                        <span class="cs-label" style="font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;">Lighthouse A11y</span>
+                    </div>
+                    <div class="cs-stat" style="text-align: center;">
+                        <span class="cs-number" style="font-size: 2.5rem; font-weight: 700; color: var(--accent); line-height: 1.1; display: block;">0</span>
+                        <span class="cs-label" style="font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;">CLS</span>
+                    </div>
+                    <div class="cs-stat" style="text-align: center;">
+                        <span class="cs-number" style="font-size: 2.5rem; font-weight: 700; color: var(--accent); line-height: 1.1; display: block;">~15KB</span>
+                        <span class="cs-label" style="font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;">JS (gzipped)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section reveal">
+    <div class="container">
+        <h2 class="section-title">02 My Toolkit</h2>
+        <p class="section-subtitle">Skills backed by shipped projects — click a project link to jump there.</p>
+
+        <div class="skills-showcase">
+            <!-- Core Languages -->
+            <div class="skill-group reveal">
+                <h3><i class="fas fa-code"></i> Core Languages</h3>
+                <div class="skill-rows">
+                    <div class="skill-row" data-projects="vastra,myaadhaar,portfolio">
+                        <div class="skill-main">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-dots" data-level="5"></div>
+                        </div>
+                        <div class="skill-proof">
+                            <a class="proof-link" href="#projects" data-card="0" aria-label="View Vastra project">
+                                <span class="proof-name">Vastra</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                            <a class="proof-link" href="#projects" data-card="1" aria-label="View MyAadhaar project">
+                                <span class="proof-name">MyAadhaar</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                            <a class="proof-link" href="#projects" data-card="2" aria-label="View Portfolio project">
+                                <span class="proof-name">Portfolio</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="skill-row" data-projects="vastra,myaadhaar,portfolio">
+                        <div class="skill-main">
+                            <span class="skill-name">CSS3 / Tailwind</span>
+                            <div class="skill-dots" data-level="5"></div>
+                        </div>
+                        <div class="skill-proof">
+                            <a class="proof-link" href="#projects" data-card="0" aria-label="View Vastra project">
+                                <span class="proof-name">Vastra</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                            <a class="proof-link" href="#projects" data-card="1" aria-label="View MyAadhaar project">
+                                <span class="proof-name">MyAadhaar</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                            <a class="proof-link" href="#projects" data-card="2" aria-label="View Portfolio project">
+                                <span class="proof-name">Portfolio</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="skill-row" data-projects="portfolio,myaadhaar">
+                        <div class="skill-main">
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <div class="skill-dots" data-level="3"></div>
+                        </div>
+                        <div class="skill-proof">
+                            <a class="proof-link" href="#projects" data-card="2" aria-label="View Portfolio project">
+                                <span class="proof-name">Portfolio</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                            <a class="proof-link" href="#projects" data-card="1" aria-label="View MyAadhaar project">
+                                <span class="proof-name">MyAadhaar</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="skill-row" data-projects="vastra">
+                        <div class="skill-main">
+                            <span class="skill-name">React</span>
+                            <div class="skill-dots" data-level="3"></div>
+                        </div>
+                        <div class="skill-proof">
+                            <a class="proof-link" href="#projects" data-card="0" aria-label="View Vastra project">
+                                <span class="proof-name">Vastra</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animation & Motion -->
+            <div class="skill-group reveal">
+                <h3><i class="fas fa-magic"></i> Animation & Motion</h3>
+                <div class="skill-rows">
+                    <div class="skill-row" data-projects="portfolio">
+                        <div class="skill-main">
+                            <span class="skill-name">GSAP</span>
+                            <div class="skill-dots" data-level="3"></div>
+                        </div>
+                        <div class="skill-proof">
+                            <a class="proof-link" href="#projects" data-card="2" aria-label="View Portfolio project">
+                                <span class="proof-name">Portfolio</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="skill-row" data-projects="portfolio">
+                        <div class="skill-main">
+                            <span class="skill-name">CSS Animations</span>
+                            <div class="skill-dots" data-level="4"></div>
+                        </div>
+                        <div class="skill-proof">
+                            <a class="proof-link" href="#projects" data-card="2" aria-label="View Portfolio project">
+                                <span class="proof-name">Portfolio</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="skill-row" data-projects="portfolio">
+                        <div class="skill-main">
+                            <span class="skill-name">Scroll-triggered Effects</span>
+                            <div class="skill-dots" data-level="3"></div>
+                        </div>
+                        <div class="skill-proof">
+                            <a class="proof-link" href="#projects" data-card="2" aria-label="View Portfolio project">
+                                <span class="proof-name">Portfolio</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design & Tools -->
+            <div class="skill-group reveal">
+                <h3><i class="fas fa-palette"></i> Design & Tools</h3>
+                <div class="skill-rows">
+                    <div class="skill-row" data-projects="taste,coolminimal">
+                        <div class="skill-main">
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-dots" data-level="4"></div>
+                        </div>
+                        <div class="skill-proof">
+                            <a class="proof-link" href="#ui-designs" data-card="0" aria-label="View Taste of Music design">
+                                <span class="proof-name">Taste of Music</span>
+                                <i class="fas fa-image proof-icon" aria-hidden="true"></i>
+                            </a>
+                            <a class="proof-link" href="#ui-designs" data-card="1" aria-label="View Cool Minimal design">
+                                <span class="proof-name">Cool Minimal</span>
+                                <i class="fas fa-image proof-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="skill-row" data-projects="taste,coolminimal">
+                        <div class="skill-main">
+                            <span class="skill-name">Design Systems</span>
+                            <div class="skill-dots" data-level="4"></div>
+                        </div>
+                        <div class="skill-proof">
+                            <a class="proof-link" href="#ui-designs" data-card="0" aria-label="View Taste of Music design">
+                                <span class="proof-name">Taste of Music</span>
+                                <i class="fas fa-image proof-icon" aria-hidden="true"></i>
+                            </a>
+                            <a class="proof-link" href="#ui-designs" data-card="1" aria-label="View Cool Minimal design">
+                                <span class="proof-name">Cool Minimal</span>
+                                <i class="fas fa-image proof-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="skill-row" data-projects="vastra,myaadhaar,portfolio">
+                        <div class="skill-main">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-dots" data-level="5"></div>
+                        </div>
+                        <div class="skill-proof">
+                            <a class="proof-link" href="#projects" data-card="0" aria-label="View Vastra project">
+                                <span class="proof-name">Vastra</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                            <a class="proof-link" href="#projects" data-card="1" aria-label="View MyAadhaar project">
+                                <span class="proof-name">MyAadhaar</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                            <a class="proof-link" href="#projects" data-card="2" aria-label="View Portfolio project">
+                                <span class="proof-name">Portfolio</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="skill-row" data-projects="vastra,portfolio">
+                        <div class="skill-main">
+                            <span class="skill-name">Git / GitHub</span>
+                            <div class="skill-dots" data-level="4"></div>
+                        </div>
+                        <div class="skill-proof">
+                            <a class="proof-link" href="#projects" data-card="0" aria-label="View Vastra project">
+                                <span class="proof-name">Vastra</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                            <a class="proof-link" href="#projects" data-card="2" aria-label="View Portfolio project">
+                                <span class="proof-name">Portfolio</span>
+                                <i class="fas fa-external-link-alt proof-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <p class="skills-legend" aria-hidden="true">●●●●● Expert &nbsp; ●●●○○ Intermediate &nbsp; ●●○○○ Learning &nbsp; — Click project links to jump</p>
+    </div>
+</section>
+        <!-- About Section -->
+       <section id="about" class="section about-section reveal">
+    <div class="container">
+        <h2 class="section-title">03 About Me</h2>
+        <p class="section-subtitle">Frontend Developer · UI Designer · Problem Solver</p>
+
+        <div class="about-grid">
+            <!-- Left Column: Profile & Stats -->
+            <div class="about-profile-card reveal">
+                <div class="profile-header">
+                    <div class="avatar-placeholder">ND</div>
+                    <div>
+                        <h3>Nishant Doifode</h3>
+                        <span class="role-badge">Frontend Dev</span>
+                    </div>
+                </div>
+
+                <ul class="profile-details">
+                    <li><i class="fas fa-map-marker-alt"></i> Based in India</li>
+                    <li><i class="fas fa-briefcase"></i> 3+ Years — Frontend Developer</li>
+                    <li><i class="fas fa-lightbulb"></i> UI/UX & Animation Focus</li>
+                </ul>
+
+                <!-- Fixed Width Stats to Prevent Layout Shift -->
+                <div class="stats-row">
+                    <div class="stat-item" data-target="6">
+                        <span class="stat-number-wrapper"><span class="stat-number">0</span><span class="stat-suffix">+</span></span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item" data-target="8">
+                        <span class="stat-number-wrapper"><span class="stat-number">0</span><span class="stat-suffix">+</span></span>
+                        <span class="stat-label">Tools</span>
+                    </div>
+                    <div class="stat-item" data-target="1">
+                        <span class="stat-number-wrapper"><span class="stat-number">0</span><span class="stat-suffix">+</span></span>
+                        <span class="stat-label">Year</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Bio & Quote -->
+            <div class="about-content reveal">
+                <p>I'm a frontend developer with 3+ years of experience shipping production web applications. I specialize in turning complex designs into accessible, performant interfaces — from Figma to deployment.</p>
+                <p>My work spans e-commerce dashboards, design systems, and interactive web apps. I'm comfortable owning a feature end-to-end: architecture decisions, component implementation, accessibility, and deployment. I write clean, maintainable code and treat performance as a first-class concern, not an afterthought.</p>
+
+                <blockquote class="about-quote">
+                    <i class="fas fa-quote-left"></i>
+                    Good design is invisible, and great UI should feel effortless to users.
+                </blockquote>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/nishant-doifode-165166372/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/nishantdoifode" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:nishantdoifode56@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Contact Section -->
+       <section id="contact" class="section contact-section reveal">
+    <div class="container">
+        <h2 class="section-title">04 Let's Build Together</h2>
+        <p class="section-subtitle">Have a project idea or want to collaborate? Drop me a message below.</p>
+
+        <div class="contact-wrapper">
+            <!-- Left: Contact Info & Socials -->
+            <div class="contact-info reveal">
+                <h3>Get in Touch</h3>
+                <p>I'm currently available for freelance & contract opportunities. Whether you have a project in mind or just want to connect, feel free to reach out!</p>
+
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>nishantdoifode56@gmail.com</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Based in India</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right: Netlify Form -->
+            <form name="contact" method="POST" data-netlify="true" class="contact-form reveal" id="contact-form">
+                <input type="hidden" name="form-name" value="contact" />
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-resume" id="submit-btn">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+        <footer>
+            <p>© 2026 Nishant Doifode. All rights reserved.</p>
+            <a href="#home" class="back-to-top">Back to top <i class="fas fa-arrow-up"></i></a>
+        </footer>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="" alt="Project Image" class="modal-img" id="modal-img">
+            <h2 id="modal-title">Project Title</h2>
+            <p id="modal-desc">Project description goes here.</p>
+        </div>
+    </div>
+
+    <!-- Image Viewer for UI Designs -->
+    <div class="image-viewer hidden">
+        <span class="close-viewer">&times;</span>
+        <img src="" alt="UI Design" id="viewer-img">
+        <p class="viewer-caption" id="viewer-caption"></p>
+    </div>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nishant Doifode",
+      "jobTitle": "Frontend Developer",
+      "description": "Frontend Developer & UI Designer building modern, animated web experiences with HTML, CSS, JavaScript, GSAP, and Tailwind.",
+      "url": "https://nishantdoifode.github.io/",
+      "sameAs": [
+        "https://www.linkedin.com/in/nishant-doifode-165166372/",
+        "https://github.com/nishantdoifode"
+      ],
+      "knowsAbout": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "GSAP",
+        "Figma",
+        "UI/UX Design",
+        "Python"
+      ]
+    }
+    </script>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
